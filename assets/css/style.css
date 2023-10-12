@@ -1,0 +1,287 @@
+/* Initialisation */
+
+@font-face {
+    font-family: 'Muli Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Muli Regular'), url('Muli-Regular.woff') format('woff');
+}
+
+:root{
+    --blue: #2d3e50;
+    --red: #e84c3d;
+    --grey: #ecf0f1;
+    --darkgrey: #000539;
+    --white: #fffeff;
+    --font1: 'Nunito', sans-serif;
+    --font2: 'Muli Regular', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+
+nav{
+    background: var(--blue);
+    width: 100vw;
+    height: 16vh;
+    padding-inline: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: var(--red) 3px solid;
+}
+
+.logo{
+    width: 280px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 35%;
+}
+
+.nav li a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: var(--font1);
+    font-weight: 600;
+    transition: all .3s;
+}
+
+.nav li a:hover{
+    color: var(--red);
+}
+
+/* Hero */
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 60vh;
+    background-image: url('../img/banner.jpeg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.mainTitle{
+    font-size: 6.5rem;
+    font-family: var(--font2);
+    color: var(--blue);
+    text-shadow: 1px 1px 4px var(--white);
+}
+
+/* Boutons */
+
+.btn{
+    padding: 1em 1.5em;
+    font-size: 1.3rem;
+    border: none;
+    background: var(--red);
+    color: var(--white);
+    border-radius: 10px;
+    margin-block: 3vh;
+    transition: all .3s;
+
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #c04034;
+}
+
+/* Structure site */
+
+.container{
+    background: var(--grey);
+    width: 100vw;
+    padding-block: 10vh;
+}
+
+.wrapper{
+    padding-inline: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font2);
+
+}
+
+.sectionTitle{
+    font-size: 3rem;
+    color: var(--blue);
+    margin-block: 1.5em;
+}
+
+.sectionContent{
+    color: var(--darkgrey);
+    font-size: 1.5rem;
+}
+
+/* Cartes */
+
+.cardsContainer{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5vh;
+    gap: 1vw;
+}
+
+
+.card{
+    background-color: var(--white);
+    -webkit-box-shadow: 0px 0px 15px -4px #0000003d; 
+    box-shadow: 0px 0px 15px -4px #0000003d;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 580px;
+}
+
+.cardImg{
+    width: 450px;
+}
+
+.cardTitle{
+    font-family: var(--font1);
+    color: black;
+    font-size: 1.4rem;
+    margin-block: 3vh;
+}
+
+.cardContent{
+    color: var(--darkgrey);
+    font-size: 1.2rem;
+    text-wrap: balance;
+    max-width: 450px;
+
+}
+
+/* Cartes Parents */
+
+.pCard{
+    background: var(--white);
+    -webkit-box-shadow: 0px 0px 15px -4px #0000003d; 
+    box-shadow: 0px 0px 15px -4px #0000003d;
+    width: calc(450px + 40px);
+    position: relative;
+    padding: 20px;
+    padding-top: 120px;
+    outline: 1px solid #c0c0c03d;
+}
+
+.pImg{
+    width: 180px;
+    aspect-ratio: 1;
+    border-radius: 100vw;
+    object-fit: cover;
+    border: 8px solid var(--white);
+    -webkit-box-shadow: 0px 0px 15px -4px #0000003d; 
+    box-shadow: 0px 0px 15px -4px #0000003d;
+    position: absolute;
+    left: 50%;
+    top: -90px;
+    transform: translateX(-50%);
+}
+
+.pDesc{
+    font-style: italic;
+    font-family: var(--font1);
+    font-size: 1.3rem;
+    margin-bottom: 5vh;
+    
+}
+
+.pAuthor{
+    margin-block: 0!important;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Formulaire */
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--white);
+    padding: 20px;
+    min-width: 30vw;
+    margin-top: 15vh;
+    -webkit-box-shadow: 0px 0px 15px -4px #0000003d; 
+    box-shadow: 0px 0px 15px -4px #0000003d;
+
+}
+
+form input, form select, form textarea{
+    width: 100%;
+    padding: 1em 1.2rem;
+    border: 2px solid #e4e4e4;
+    border-radius: 5px;
+}
+
+form label{
+    margin-right: auto;
+    font-family: var(--font1);
+    color: black;
+    font-size: 1.4rem;
+    margin-block: 1vh;
+}
+
+form input[type=submit]{
+    width: unset;
+    margin-right: auto;
+}
+
+/* Footer */
+
+footer{
+    background: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+footer img.logo{
+    width: 550px;
+}
+
+footer p, footer a{
+    color: var(--white);
+    font-family: var(--font2);
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.legals{
+    margin-top: 10vh;
+    margin-bottom: 2px;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="assets/img/Logo.png" alt="Logo" class="logo">
+            <ul class="nav">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#cours">Cours</a></li>
+                <li><a href="#ressources">Ressources</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1 class="mainTitle">Bienvenue sur Kids Learning</h1>
+            <button class="btn">Découvrir</button>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="wrapper">
+                <h2 class="sectionTitle" id="cours">Nos Cours</h2>
+                <p class="sectionContent">Apprenez à votre rythme avec nos cours en ligne</p>
+                <div class="cardsContainer">
+                    <div class="card">
+                        <img src="assets/img/maths.jpeg" alt="Mathématiques" class="cardImg">
+                        <h4 class="cardTitle">Mathématiques</h4>
+                        <p class="cardContent">Explorez les concepts fondamentaux et avancés des mathématiques et
+                            devenez un maître des nombres.</p>
+                        <button class="btn">Démarrer l'Apprentissage</button>
+                    </div>
+                    <div class="card">
+                        <img src="assets/img/science.jpeg" alt="Sciences" class="cardImg">
+                        <h4 class="cardTitle">Sciences</h4>
+                        <p class="cardContent">Découvrez les mystères de l'univers, de la biologie moléculaire à la
+                            physique quantique.</p>
+                        <button class="btn">Démarrer l'Apprentissage</button>
+                    </div>
+                    <div class="card">
+                        <img src="assets/img/literature.jpeg" alt="Littérature" class="cardImg">
+                        <h4 class="cardTitle">Littérature</h4>
+                        <p class="cardContent">Parcourez les oeuvres des plus grands auteurs, poètes, et dramaturges de
+                            l'histoire.</p>
+                        <button class="btn">Démarrer l'Apprentissage</button>
+                    </div>
+                </div>
+                <h2 class="sectionTitle" id="ressources">Ressources</h2>
+                <div class="cardsContainer">
+                    <div class="pCard">
+                        <img src="assets/img/parent-1.jpeg" alt="Parent 1" class="pImg">
+                        <p class="pDesc">"Ma fille a beaucoup appris grâce à cette plateforme. Les cours sont très
+                            informatifs et faciles à comprendre."</p>
+                        <h4 class="pAuthor cardTitle">- Thérèse Dupont</h4>
+                    </div>
+                    <div class="pCard">
+                        <img src="assets/img/parent-2.jpeg" alt="Parent 2" class="pImg">
+                        <p class="pDesc">"Une excellente ressource pour l'apprentissage en ligne. Je la recommande à
+                            tout le monde!"</p>
+                        <h4 class="pAuthor cardTitle">- Jean Curie</h4>
+                    </div>
+                    <div class="pCard">
+                        <img src="assets/img/parent-3.jpeg" alt="Parent 3" class="pImg">
+                        <p class="pDesc">"Les ressources disponibles sont très utiles et variées. Une plateforme
+                            indispensable pour l'éducation."</p>
+                        <h4 class="pAuthor cardTitle">- Albert Dorne</h4>
+                    </div>
+                </div>
+                <h2 class="sectionTitle" id="contact">Contactez-Nous</h2>
+                <p class="sectionContent">Avez-vous des questions ou des suggestions ? N'hésitez pas à nous contacter!
+                </p>
+                <form>
+                    <label for="name">Nom:</label>
+                    <input type="text" name="name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                    
+                    <label for="subject">Choisissez un sujet:</label>
+                    <select name="subject" id="subject">
+                        <option value="Sélectionnez un sujet" selected></option>
+                    </select>
+                    
+                    <label for="subject2">Sujet:</label>
+                    <input type="text" name="subject2">
+
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    
+                    <input class="btn" type="submit" value="Envoyer">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="assets/img/Logo.png" alt="Logo" class="logo">
+        <p>Nous sommes ici pour répondre à vos questions et inquiétudes.<br><br><a href="mailto:info@kids-learning.fr">info@kids-learning.fr</a><br><br><a href="tel:+0123456789">01 23 45 67 89</a><br><br>Formulaire de contact</p>
+        <div class="legals">
+            <p>&copy; 2023 Kids Learning. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
